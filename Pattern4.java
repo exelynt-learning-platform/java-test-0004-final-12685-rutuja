@@ -1,0 +1,13 @@
+public class Pattern4 {
+	public static void main(String[] args) {
+		int n = 4;
+		int size = 2 * n - 1;
+		for (int i = 0; i < 2 * n - 1; i++) {
+			for (int j = 0; j < 2 * n - 1; j++) {
+				int value = n - Math.min(Math.min(i, j), Math.min(size - 1 - i, size - 1 - j));
+				System.out.print(value + " ");
+			}
+			System.out.println();
+		}
+	}
+}
